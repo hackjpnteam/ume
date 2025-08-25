@@ -5,12 +5,9 @@ export default function Footer() {
     <footer id="contact" className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 sm:px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold text-red-400 mb-4">
-              中峰農園
-            </h3>
+            <h3 className="text-2xl font-bold text-red-400 mb-4">中峰農園</h3>
             <p className="text-gray-300 leading-relaxed">
               1994年より続く、紀州の伝統的な梅干し作りを守り続けています。
             </p>
@@ -18,9 +15,7 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <h4 className="text-lg font-semibold text-red-400 mb-4">
-              サイトマップ
-            </h4>
+            <h4 className="text-lg font-semibold text-red-400 mb-4">サイトマップ</h4>
             <nav className="space-y-2">
               {[
                 { label: 'ホーム', href: '/' },
@@ -28,9 +23,9 @@ export default function Footer() {
                 { label: 'こだわり', href: '#features' },
                 { label: '製法', href: '#process' },
               ].map((link) => (
-                <Link 
+                <Link
                   key={link.href}
-                  href={link.href} 
+                  href={link.href}
                   className="block text-gray-300 hover:text-red-400 transition-colors"
                 >
                   {link.label}
@@ -41,9 +36,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold text-red-400 mb-4">
-              お問い合わせ
-            </h4>
+            <h4 className="text-lg font-semibold text-red-400 mb-4">お問い合わせ</h4>
             <div className="bg-white p-4 rounded-lg space-y-3">
               <div>
                 <div className="font-semibold text-gray-800 mb-1">お電話でのお問い合わせ</div>
@@ -69,9 +62,7 @@ export default function Footer() {
 
           {/* Address */}
           <div>
-            <h4 className="text-lg font-semibold text-red-400 mb-4">
-              所在地
-            </h4>
+            <h4 className="text-lg font-semibold text-red-400 mb-4">所在地</h4>
             <div className="text-gray-300 space-y-2">
               <div>
                 <div className="font-semibold text-white">株式会社中峰農園</div>
@@ -90,9 +81,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-gray-700 pt-8 text-center">
-          <p className="text-gray-400">
-            © 2024 中峰農園 All Rights Reserved.
-          </p>
+          <p className="text-gray-400">© 2024 中峰農園 All Rights Reserved.</p>
         </div>
       </div>
     </footer>
